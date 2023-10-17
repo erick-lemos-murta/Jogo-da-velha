@@ -79,8 +79,13 @@
            }
         }
         function limpa(){
-        cliques = 0;
-        document.getElementsByClassName('bloco').innerHTML = "";
+            cliques = 0;
+            console.log('oi', cliques)
+            for(i=0;i<9;i++){
+                document.getElementsByClassName('bloco')[i].innerHTML = "";
+                document.getElementsByClassName('bloco')[i].style.backgroundColor = "white";
+                document.getElementById('limpa').style = "display: none;"
+            }        
         }
     </script>
 </body>
